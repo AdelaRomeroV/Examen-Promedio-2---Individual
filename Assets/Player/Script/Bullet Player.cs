@@ -14,11 +14,6 @@ public class BulletPlayer : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void Start()
-    {
-        SetDirection(Vector3.up);
-    }
-
     public void SetDirection(Vector3 dir)
     {
         this.dir = dir;

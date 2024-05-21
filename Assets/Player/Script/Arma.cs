@@ -10,9 +10,13 @@ public class Arma : MonoBehaviour
 
     protected virtual void GetDisparo(int bulletType)
     {
-        GameObject obj = Instantiate(bullet[bulletType]);
-        obj.transform.position = shootPoint.position;
-        obj.GetComponent<BulletPlayer >().SetDirection(shootPoint.forward);
-        CountBullet--;
+        if (CountBullet > 0)
+        {
+            GameObject obj = Instantiate(bullet[bulletType]);
+            obj.transform.position = shootPoint.position;
+            obj.GetComponent<BulletPlayer >().SetDirection(shootPoint.up);
+            CountBullet--;
+           
+        } 
     }
 }
