@@ -52,6 +52,10 @@ public class EnemySpawer : MonoBehaviour
             collectionIndex = 2;
             enemies = enemyCollections[collectionIndex].Enemies;
         }
+        else
+        {
+            totalTimer = 0;
+        }
     }
 
     void Spawn()
