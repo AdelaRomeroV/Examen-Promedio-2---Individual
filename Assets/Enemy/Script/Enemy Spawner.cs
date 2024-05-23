@@ -72,7 +72,8 @@ public class EnemySpawer : MonoBehaviour
         Vector3 max = boxCollider.bounds.max;
         float x = Random.Range(min.x, max.x);
         float y = Random.Range(min.y, max.y);
-        
-        return new Vector3(x, y);
+        float z = boxCollider.transform.position.z;
+
+        return new Vector3(x, y, z);
     }
 }

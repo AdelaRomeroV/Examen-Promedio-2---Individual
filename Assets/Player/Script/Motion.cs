@@ -14,7 +14,8 @@ public class Motion : MonoBehaviour
 
     protected virtual void Initialize()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();      
+
     }
 
     void Update()
